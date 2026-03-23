@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Бидний тухай — АМША</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<nav>
+  <a href="index.html" class="nav-logo">
+    <div class="emblem"><span>Ш</span></div>
+    <div class="brand"><span class="brand-main">АМША</span><span class="brand-sub">Американ Монгол Шагай Харваа</span></div>
+  </a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Нүүр</a></li>
+    <li><a href="tournaments.html">Тэмцээн</a></li>
+    <li><a href="clubs.html">Клубууд</a></li>
+    <li><a href="players.html">Харваачид</a></li>
+    <li><a href="about.html" class="active">Бидний тухай</a></li>
+  </ul>
+  <div class="nav-hamburger" onclick="toggleNav()"><span></span><span></span><span></span></div>
+</nav>
+<div class="page">
+
+  <section style="padding:5rem 2rem 3.5rem;text-align:center;position:relative;overflow:hidden;background:var(--surface);border-bottom:1px solid var(--border)">
+    <div class="hero-bg"></div>
+    <span class="tag" style="position:relative">✦ Бидний тухай</span>
+    <h1 style="font-family:'Cormorant Garamond',serif;font-size:clamp(2.5rem,6vw,4.5rem);font-weight:700;color:var(--cream);line-height:1.05;margin-top:.5rem;position:relative">Бидний <span style="color:var(--gold)">Түүх</span></h1>
+    <p style="color:var(--muted);max-width:520px;margin:.8rem auto 0;position:relative">Монголын эртний уламжлалт шагай харваагаар Америкт нэгдсэн монголчуудын нийгэмлэг.</p>
+  </section>
+
+  <!-- MISSION -->
+  <section class="section">
+    <div class="container">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center">
+        <div>
+          <span class="tag">✦ Эрхэм зорилго</span>
+          <h2 class="section-title">Уламжлалыг хойч үедээ</h2>
+          <div class="rule"></div>
+          <p style="color:var(--muted);margin-bottom:1rem">Америкийн Монгол Шагай Харваа (АМША) нь 2015 онд байгуулагдсан бөгөөд Монголын нүүдэлчин соёлын нэг хэсэг болох шагай харвааг Америкт хадгалж, хөгжүүлэх, залуу үедээ дамжуулах зорилготой.</p>
+          <p style="color:var(--muted);margin-bottom:1rem">Баруун болон Зүүн гэсэн хоёр бүс нутгаар зохион байгуулагдан, жил бүр дөрвөн том тэмцээн явуулдаг. Тэмцээн бүр нь зөвхөн өрсөлдөөн төдийгүй, монгол соёл, уламжлалыг өргөн таниулах арга хэмжээ болдог.</p>
+          <p style="color:var(--muted)">ЮНЕСКО-оос хүлээн зөвшөөрсөн энэхүү тоглоомыг бид зөвхөн спорт биш, харин өвөг дээдсийнхээ дурсгалыг хүндэтгэх зан үйл гэж үздэг.</p>
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.5rem">
+          <div style="border:1px solid var(--border);border-radius:12px;padding:2rem;background:var(--surface);text-align:center">
+            <div style="font-family:'Cormorant Garamond',serif;font-size:3rem;font-weight:700;color:var(--gold)">2015</div>
+            <div style="font-size:.8rem;color:var(--muted);margin-top:.3rem;letter-spacing:.06em;text-transform:uppercase">Байгуулагдсан</div>
+          </div>
+          <div style="border:1px solid var(--border);border-radius:12px;padding:2rem;background:var(--surface);text-align:center">
+            <div style="font-family:'Cormorant Garamond',serif;font-size:3rem;font-weight:700;color:var(--gold)">12+</div>
+            <div style="font-size:.8rem;color:var(--muted);margin-top:.3rem;letter-spacing:.06em;text-transform:uppercase">Хот</div>
+          </div>
+          <div style="border:1px solid var(--border);border-radius:12px;padding:2rem;background:var(--surface);text-align:center">
+            <div style="font-family:'Cormorant Garamond',serif;font-size:3rem;font-weight:700;color:var(--gold)">300+</div>
+            <div style="font-size:.8rem;color:var(--muted);margin-top:.3rem;letter-spacing:.06em;text-transform:uppercase">Харваачид</div>
+          </div>
+          <div style="border:1px solid var(--border);border-radius:12px;padding:2rem;background:var(--surface);text-align:center">
+            <div style="font-family:'Cormorant Garamond',serif;font-size:3rem;font-weight:700;color:var(--gold)">40+</div>
+            <div style="font-size:.8rem;color:var(--muted);margin-top:.3rem;letter-spacing:.06em;text-transform:uppercase">Тэмцээн/жил</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LEADERSHIP -->
+  <section class="section" style="background:var(--surface);border-top:1px solid var(--border);border-bottom:1px solid var(--border)">
+    <div class="container">
+      <div class="section-header center">
+        <span class="tag">✦ Удирдлага</span>
+        <h2 class="section-title">Тэргүүлэгч гишүүд</h2>
+        <div class="rule"></div>
+        <p class="section-sub">АМША-ийн үйл ажиллагааг зохион байгуулдаг удирдах зөвлөлийн гишүүд.</p>
+      </div>
+
+      <!-- NATIONAL BOARD -->
+      <div style="margin-bottom:3rem">
+        <div class="city-name" style="margin-bottom:1.5rem">🏛️ Үндэсний зөвлөл</div>
+        <div class="leaders-grid">
+          <div class="leader-card">
+            <div class="leader-photo">👤</div>
+            <div class="leader-info">
+              <div class="leader-name">Батдорж Намсрай</div>
+              <div class="leader-role">Ерөнхийлөгч</div>
+              <div class="leader-region">Denver, CO</div>
+            </div>
+          </div>
+          <div class="leader-card">
+            <div class="leader-photo">👤</div>
+            <div class="leader-info">
+              <div class="leader-name">Оюунцэцэг Болд</div>
+              <div class="leader-role">Дэд ерөнхийлөгч</div>
+              <div class="leader-region">New York, NY</div>
+            </div>
+          </div>
+          <div class="leader-card">
+            <div class="leader-photo">👤</div>
+            <div class="leader-info">
+              <div class="leader-name">Мөнхбаяр Дорж</div>
+              <div class="leader-role">Нарийн бичгийн дарга</div>
+              <div class="leader-region">Chicago, IL</div>
+            </div>
+          </div>
+          <div class="leader-card">
+            <div class="leader-photo">👤</div>
+            <div class="leader-info">
+              <div class="leader-name">Энхтуяа Ганбаатар</div>
+              <div class="leader-role">Санхүүгийн дарга</div>
+              <div class="leader-region">Seattle, WA</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- WEST LEADERSHIP -->
+      <div style="margin-bottom:3rem">
+        <div class="city-name" style="margin-bottom:1.5rem"><span class="pill pill-west">Баруун бүс</span> Удирдлага</div>
+        <div class="leaders-grid">
+          <div class="leader-card">
+            <div class="leader-photo">👤</div>
+            <div class="leader-info">
+              <div class="leader-name">Галбаатар Сэлэнгэ</div>
+              <div class="leader-role">Баруун бүсийн дарга</div>
+              <div class="leader-region" style="color:#e74c3c">Denver, CO</div>
+            </div>
+          </div>
+          <div class="leader-card">
+            <div class="leader-photo">👤</div>
+            <div class="leader-info">
+              <div class="leader-name">Солонго Цэрэн</div>
+              <div class="leader-role">Тэмцээний зохион байгуулагч</div>
+              <div class="leader-region" style="color:#e74c3c">Los Angeles, CA</div>
+            </div>
+          </div>
+          <div class="leader-card">
+            <div class="leader-photo">👤</div>
+            <div class="leader-info">
+              <div class="leader-name">Дэлгэрмаа Батсуурь</div>
+              <div class="leader-role">Тамирчдын зохицуулагч</div>
+              <div class="leader-region" style="color:#e74c3c">Seattle, WA</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- EAST LEADERSHIP -->
+      <div>
+        <div class="city-name" style="margin-bottom:1.5rem"><span class="pill pill-east">Зүүн бүс</span> Удирдлага</div>
+        <div class="leaders-grid">
+          <div class="leader-card">
+            <div class="leader-photo">👤</div>
+            <div class="leader-info">
+              <div class="leader-name">Баярмаа Лхамсүрэн</div>
+              <div class="leader-role">Зүүн бүсийн дарга</div>
+              <div class="leader-region" style="color:#5dade2">New York, NY</div>
+            </div>
+          </div>
+          <div class="leader-card">
+            <div class="leader-photo">👤</div>
+            <div class="leader-info">
+              <div class="leader-name">Тэрбишийн Алтан</div>
+              <div class="leader-role">Тэмцээний зохион байгуулагч</div>
+              <div class="leader-region" style="color:#5dade2">Chicago, IL</div>
+            </div>
+          </div>
+          <div class="leader-card">
+            <div class="leader-photo">👤</div>
+            <div class="leader-info">
+              <div class="leader-name">Ундрах Жамбалдорж</div>
+              <div class="leader-role">Тамирчдын зохицуулагч</div>
+              <div class="leader-region" style="color:#5dade2">Washington, DC</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TIMELINE -->
+  <section class="section">
+    <div class="container">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:start">
+        <div>
+          <span class="tag">✦ Түүх</span>
+          <h2 class="section-title">Хэрхэн эхэлсэн бэ</h2>
+          <div class="rule"></div>
+          <div class="timeline" style="margin-top:2rem">
+            <div class="tl-item">
+              <div class="tl-dot"></div>
+              <div class="tl-year">2015</div>
+              <div class="tl-text">Denver хотод анхны шагай харвааны клуб байгуулагдаж, 12 тамирчнаар эхэлсэн.</div>
+            </div>
+            <div class="tl-item">
+              <div class="tl-dot"></div>
+              <div class="tl-year">2017</div>
+              <div class="tl-text">New York, Chicago хотуудад клубууд нэмэгдэж, анхны бүсийн тэмцээн зохион байгуулагдсан.</div>
+            </div>
+            <div class="tl-item">
+              <div class="tl-dot"></div>
+              <div class="tl-year">2019</div>
+              <div class="tl-text">Баруун болон Зүүн гэсэн хоёр бүсийн бүтэц тогтоогдож, АМША албан ёсоор байгуулагдсан.</div>
+            </div>
+            <div class="tl-item">
+              <div class="tl-dot"></div>
+              <div class="tl-year">2021</div>
+              <div class="tl-text">COVID-19-ийн дараах анхны томоохон Америкийн аварга шалгаруулалт Las Vegas хотод болсон.</div>
+            </div>
+            <div class="tl-item">
+              <div class="tl-dot"></div>
+              <div class="tl-year">2024</div>
+              <div class="tl-text">Тамирчдын тоо 300-аас давж, 12+ хотод клубууд ажиллаж эхэлсэн. Залуучуудын хөтөлбөр нэмэгдсэн.</div>
+            </div>
+            <div class="tl-item">
+              <div class="tl-dot"></div>
+              <div class="tl-year">2026</div>
+              <div class="tl-text">Шинэ вэбсайт, цахим бүртгэлийн систем нэвтэрч, холбооны үйл ажиллагаа өргөжиж байна.</div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <span class="tag">✦ Холбоо барих</span>
+          <h2 class="section-title">Нэгдэхийг хүсч байна уу?</h2>
+          <div class="rule"></div>
+          <p style="color:var(--muted);margin-bottom:2rem">Тэмцээнд бүртгүүлэх, клуб байгуулах, эсвэл зүгээр л нэгдэх — бид тантай холбогдоход бэлэн.</p>
+          <div style="display:flex;flex-direction:column;gap:1rem">
+            <div style="display:flex;align-items:center;gap:1rem;padding:1.2rem 1.5rem;border:1px solid var(--border);border-radius:10px;background:var(--surface)">
+              <span style="font-size:1.5rem">📧</span>
+              <div>
+                <div style="font-size:.75rem;color:var(--muted);letter-spacing:.1em;text-transform:uppercase">Имэйл</div>
+                <a href="mailto:info@amsha.org" style="color:var(--gold);text-decoration:none;font-weight:500">info@amsha.org</a>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:1rem;padding:1.2rem 1.5rem;border:1px solid var(--border);border-radius:10px;background:var(--surface)">
+              <span style="font-size:1.5rem">📘</span>
+              <div>
+                <div style="font-size:.75rem;color:var(--muted);letter-spacing:.1em;text-transform:uppercase">Facebook бүлэг</div>
+                <a href="#" style="color:var(--gold);text-decoration:none;font-weight:500">AMSHA Official Group</a>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:1rem;padding:1.2rem 1.5rem;border:1px solid var(--border);border-radius:10px;background:var(--surface)">
+              <span style="font-size:1.5rem">📸</span>
+              <div>
+                <div style="font-size:.75rem;color:var(--muted);letter-spacing:.1em;text-transform:uppercase">Instagram</div>
+                <a href="#" style="color:var(--gold);text-decoration:none;font-weight:500">@amsha_official</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  <div class="footer-grid">
+    <div><a href="index.html" class="nav-logo"><div class="emblem"><span>Ш</span></div><div class="brand"><span class="brand-main">АМША</span></div></a><p class="footer-brand-desc">Америк дахь Монгол шагай харвааны уламжлалыг хойч үедээ өвлүүлэн хадгалж хөгжүүлнэ.</p></div>
+    <div><h5>Цэс</h5><ul><li><a href="index.html">Нүүр</a></li><li><a href="tournaments.html">Тэмцээн</a></li><li><a href="clubs.html">Клубууд</a></li><li><a href="players.html">Харваачид</a></li><li><a href="about.html">Бидний тухай</a></li></ul></div>
+    <div><h5>Бүс</h5><ul><li><a href="clubs.html#west">Баруун бүс</a></li><li><a href="clubs.html#east">Зүүн бүс</a></li></ul></div>
+    <div><h5>Холбоо барих</h5><ul><li><a href="mailto:info@amsha.org">info@amsha.org</a></li><li><a href="#">Facebook</a></li><li><a href="#">Instagram</a></li></ul></div>
+  </div>
+  <div class="footer-bottom"><span>© 2026 АМША. Бүх эрх хуулиар хамгаалагдсан.</span><span>🇲🇳 Made with pride in America</span></div>
+</footer>
+<script>
+function toggleNav(){document.getElementById('navLinks').classList.toggle('open');}
+document.querySelectorAll('.fade-up').forEach(el=>{
+  new IntersectionObserver(([e])=>{if(e.isIntersecting){el.classList.add('visible');}},{threshold:.1}).observe(el);
+});
+</script>
+</body>
+</html>

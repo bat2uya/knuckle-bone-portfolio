@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>АМША — Америкийн Монгол Шагай Харваа</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">
+    <div class="emblem"><span>Ш</span></div>
+    <div class="brand">
+      <span class="brand-main">АМША</span>
+      <span class="brand-sub">Американ Монгол Шагай Харваа</span>
+    </div>
+  </a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html" class="active">Нүүр</a></li>
+    <li><a href="tournaments.html">Тэмцээн</a></li>
+    <li><a href="clubs.html">Клубууд</a></li>
+    <li><a href="players.html">Харваачид</a></li>
+    <li><a href="about.html">Бидний тухай</a></li>
+  </ul>
+  <div class="nav-hamburger" id="hamburger" onclick="toggleNav()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<div class="page">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-grid-lines"></div>
+    <div class="hero-eyebrow">
+      <span>Америкийн Монгол Шагай Харвааны Холбоо</span>
+    </div>
+    <h1>
+      Америк Дахь
+      <span class="accent">Монголын Шагайн</span>
+      Салбар Холбоо
+    </h1>
+    <p class="hero-desc">
+      Баруун болон Зүүн бүсийн монгол Харваачид нэгдэн, Монголын эртний уламжлалт шагай харвааг Америкт хөгжүүлэж байна.
+    </p>
+    <div class="hero-ctas">
+      <a href="tournaments.html" class="btn btn-gold">2026 тэмцээнүүд →</a>
+      <a href="clubs.html" class="btn btn-ghost">Клубуудыг харах</a>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <div class="stats-band">
+    <div class="stat-item">
+      <div class="stat-num">2</div>
+      <div class="stat-label">Бүс</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">12+</div>
+      <div class="stat-label">Клуб</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">60+</div>
+      <div class="stat-label">Баг</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">4</div>
+      <div class="stat-label">Том тэмцээн / жил</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">300+</div>
+      <div class="stat-label">Харваачид</div>
+    </div>
+  </div>
+
+  <!-- 4 MAJOR TOURNAMENTS -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header center fade-up">
+        <span class="tag">✦ 2026 онд болох</span>
+        <h2 class="section-title">Дөрвөн том тэмцээн</h2>
+        <div class="rule"></div>
+        <p class="section-sub">Жил бүр болдог дөрвөн үндсэн тэмцээнд бүх бүс, клубуудаас Харваачид оролцдог.</p>
+      </div>
+      <div class="tournament-grid">
+        <div class="t-card national fade-up">
+          <div class="t-icon">🏆</div>
+          <div style="margin-bottom:.6rem"><span class="pill pill-gold">Үндэсний</span></div>
+          <h3>Америкийн Аварга Шалгаруулалт</h3>
+          <div class="t-meta">
+            <span>📅 2026 оны 8-р сарын 9–10</span>
+            <span>📍 Las Vegas, Nevada</span>
+            <span>👥 Бүх бүсийн шилдгүүд</span>
+          </div>
+          <div><span class="t-status soon">Удахгүй болно</span></div>
+        </div>
+        <div class="t-card west fade-up">
+          <div class="t-icon">🌄</div>
+          <div style="margin-bottom:.6rem"><span class="pill pill-west">Баруун бүс</span></div>
+          <h3>Баруун Бүсийн Аварга</h3>
+          <div class="t-meta">
+            <span>📅 2026 оны 5-р сарын 17–18</span>
+            <span>📍 Denver, Colorado</span>
+            <span>👥 Баруун бүсийн клубууд</span>
+          </div>
+          <div><span class="t-status open">Бүртгэл нээлттэй</span></div>
+        </div>
+        <div class="t-card east fade-up">
+          <div class="t-icon">🌆</div>
+          <div style="margin-bottom:.6rem"><span class="pill pill-east">Зүүн бүс</span></div>
+          <h3>Зүүн Бүсийн Аварга</h3>
+          <div class="t-meta">
+            <span>📅 2026 оны 6-р сарын 14–15</span>
+            <span>📍 New York, NY</span>
+            <span>👥 Зүүн бүсийн клубууд</span>
+          </div>
+          <div><span class="t-status open">Бүртгэл нээлттэй</span></div>
+        </div>
+        <div class="t-card round fade-up">
+          <div class="t-icon">🎯</div>
+          <div style="margin-bottom:.6rem"><span class="pill" style="background:rgba(142,68,173,.15);border:1px solid rgba(142,68,173,.4);color:#bb8fce">Тусгай</span></div>
+          <h3>Тойром Харваа</h3>
+          <div class="t-meta">
+            <span>📅 2026 оны 10-р сарын 4–5</span>
+            <span>📍 Chicago, Illinois</span>
+            <span>👥 Нээлттэй бүх Харваачид</span>
+          </div>
+          <div><span class="t-status closed">Бүртгэл удахгүй нээнэ</span></div>
+        </div>
+      </div>
+      <div style="text-align:center;margin-top:2.5rem">
+        <a href="tournaments.html" class="btn btn-ghost">Бүх тэмцээний мэдээлэл →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- REGIONS PREVIEW -->
+  <section class="section" style="background:var(--surface);border-top:1px solid var(--border);border-bottom:1px solid var(--border)">
+    <div class="container">
+      <div class="section-header center fade-up">
+        <span class="tag">✦ Бүтэц</span>
+        <h2 class="section-title">Хоёр бүс, нэг нэгдэл</h2>
+        <div class="rule"></div>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin-top:1rem">
+
+        <!-- WEST -->
+        <div style="border:1px solid rgba(192,57,43,.3);border-radius:12px;padding:2rem;background:rgba(192,57,43,.04)">
+          <div style="display:flex;align-items:center;gap:1rem;margin-bottom:1.5rem">
+            <span class="pill pill-west">Баруун бүс</span>
+            <span style="font-size:.8rem;color:var(--muted)">Western Region</span>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:.75rem">
+            <div class="city-preview-row">
+              <strong style="color:var(--cream)">Denver, CO</strong>
+              <span style="color:var(--muted);font-size:.85rem"> — 3 клуб, 12 баг</span>
+            </div>
+            <div class="city-preview-row">
+              <strong style="color:var(--cream)">Los Angeles, CA</strong>
+              <span style="color:var(--muted);font-size:.85rem"> — 2 клуб, 9 баг</span>
+            </div>
+            <div class="city-preview-row">
+              <strong style="color:var(--cream)">Seattle, WA</strong>
+              <span style="color:var(--muted);font-size:.85rem"> — 2 клуб, 8 баг</span>
+            </div>
+            <div class="city-preview-row">
+              <strong style="color:var(--cream)">San Francisco, CA</strong>
+              <span style="color:var(--muted);font-size:.85rem"> — 1 клуб, 5 баг</span>
+            </div>
+          </div>
+          <a href="clubs.html#west" class="btn btn-ghost btn-sm" style="margin-top:1.5rem;border-color:rgba(192,57,43,.4);color:#e74c3c">Дэлгэрэнгүй →</a>
+        </div>
+
+        <!-- EAST -->
+        <div style="border:1px solid rgba(41,128,185,.3);border-radius:12px;padding:2rem;background:rgba(41,128,185,.04)">
+          <div style="display:flex;align-items:center;gap:1rem;margin-bottom:1.5rem">
+            <span class="pill pill-east">Зүүн бүс</span>
+            <span style="font-size:.8rem;color:var(--muted)">Eastern Region</span>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:.75rem">
+            <div class="city-preview-row">
+              <strong style="color:var(--cream)">New York, NY</strong>
+              <span style="color:var(--muted);font-size:.85rem"> — 3 клуб, 14 баг</span>
+            </div>
+            <div class="city-preview-row">
+              <strong style="color:var(--cream)">Chicago, IL</strong>
+              <span style="color:var(--muted);font-size:.85rem"> — 2 клуб, 10 баг</span>
+            </div>
+            <div class="city-preview-row">
+              <strong style="color:var(--cream)">Washington, DC</strong>
+              <span style="color:var(--muted);font-size:.85rem"> — 2 клуб, 7 баг</span>
+            </div>
+            <div class="city-preview-row">
+              <strong style="color:var(--cream)">Boston, MA</strong>
+              <span style="color:var(--muted);font-size:.85rem"> — 1 клуб, 4 баг</span>
+            </div>
+          </div>
+          <a href="clubs.html#east" class="btn btn-ghost btn-sm" style="margin-top:1.5rem;border-color:rgba(41,128,185,.4);color:#5dade2">Дэлгэрэнгүй →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TOP PLAYERS PREVIEW -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header fade-up" style="display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:1rem">
+        <div>
+          <span class="tag">✦ Рейтинг</span>
+          <h2 class="section-title">Шилдэг Харваачид</h2>
+          <div class="rule"></div>
+        </div>
+        <a href="players.html" class="btn btn-ghost btn-sm">Бүгдийг харах →</a>
+      </div>
+      <div style="border:1px solid var(--border);border-radius:12px;overflow:hidden;background:var(--surface)">
+        <table class="ranking-table">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Тамирчин</th>
+              <th>Бүс</th>
+              <th>Клуб</th>
+              <th>Оноо</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="rank-num top3">1</span></td>
+              <td><div class="player-name-cell"><div class="player-avatar">БД</div><div><div class="player-full-name">Батдорж Дагва</div><div class="player-club">Denver Монголс</div></div></div></td>
+              <td><span class="pill pill-west">Баруун</span></td>
+              <td>Denver, CO</td>
+              <td><span class="score-val">2840</span></td>
+            </tr>
+            <tr>
+              <td><span class="rank-num top3">2</span></td>
+              <td><div class="player-name-cell"><div class="player-avatar">ОБ</div><div><div class="player-full-name">Оюунбаатар Батжаргал</div><div class="player-club">New York Нутаг</div></div></div></td>
+              <td><span class="pill pill-east">Зүүн</span></td>
+              <td>New York, NY</td>
+              <td><span class="score-val">2790</span></td>
+            </tr>
+            <tr>
+              <td><span class="rank-num top3">3</span></td>
+              <td><div class="player-name-cell"><div class="player-avatar">ГС</div><div><div class="player-full-name">Ганзориг Сүхбаатар</div><div class="player-club">Chicago Өргөө</div></div></div></td>
+              <td><span class="pill pill-east">Зүүн</span></td>
+              <td>Chicago, IL</td>
+              <td><span class="score-val">2750</span></td>
+            </tr>
+            <tr>
+              <td><span class="rank-num">4</span></td>
+              <td><div class="player-name-cell"><div class="player-avatar">НА</div><div><div class="player-full-name">Нарантуяа Алтансүх</div><div class="player-club">LA Шагай</div></div></div></td>
+              <td><span class="pill pill-west">Баруун</span></td>
+              <td>Los Angeles, CA</td>
+              <td><span class="score-val">2710</span></td>
+            </tr>
+            <tr>
+              <td><span class="rank-num">5</span></td>
+              <td><div class="player-name-cell"><div class="player-avatar">ЭМ</div><div><div class="player-full-name">Энхжаргал Мөнхбаяр</div><div class="player-club">Seattle Нуур</div></div></div></td>
+              <td><span class="pill pill-west">Баруун</span></td>
+              <td>Seattle, WA</td>
+              <td><span class="score-val">2680</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <div class="cta-strip">
+    <h2>Манай нэгдэлд нэгдэхийг хүсч байна уу?</h2>
+    <p>Ойрын клуб, багаа олж, шагай харвааны уламжлалт спортоор хамтдаа хөгжье.</p>
+    <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap">
+      <a href="clubs.html" class="btn btn-gold">Клубоо олох →</a>
+      <a href="about.html" class="btn btn-ghost">Бидний тухай</a>
+    </div>
+  </div>
+
+</div><!-- /page -->
+
+<footer>
+  <div class="footer-grid">
+    <div>
+      <a href="index.html" class="nav-logo" style="margin-bottom:.8rem">
+        <div class="emblem"><span>Ш</span></div>
+        <div class="brand"><span class="brand-main">АМША</span></div>
+      </a>
+      <p class="footer-brand-desc">Америк дахь Монгол шагай харвааны уламжлалыг хойч үедээ өвлүүлэн хадгалж хөгжүүлнэ.</p>
+    </div>
+    <div>
+      <h5>Цэс</h5>
+      <ul>
+        <li><a href="index.html">Нүүр</a></li>
+        <li><a href="tournaments.html">Тэмцээн</a></li>
+        <li><a href="clubs.html">Клубууд</a></li>
+        <li><a href="players.html">Харваачид</a></li>
+        <li><a href="about.html">Бидний тухай</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>Бүс</h5>
+      <ul>
+        <li><a href="clubs.html#west">Баруун бүс</a></li>
+        <li><a href="clubs.html#east">Зүүн бүс</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>Холбоо барих</h5>
+      <ul>
+        <li><a href="mailto:info@amsha.org">info@amsha.org</a></li>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Instagram</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 АМША — Америкийн Монгол Шагай Харваа. Бүх эрх хуулиар хамгаалагдсан.</span>
+    <span>🇲🇳 Made with pride in America</span>
+  </div>
+</footer>
+
+<script>
+function toggleNav() {
+  document.getElementById('navLinks').classList.toggle('open');
+}
+document.querySelectorAll('.fade-up').forEach(el => {
+  const obs = new IntersectionObserver(([e]) => { if (e.isIntersecting) { el.classList.add('visible'); obs.unobserve(el); } }, { threshold: .1 });
+  obs.observe(el);
+});
+</script>
+</body>
+</html>

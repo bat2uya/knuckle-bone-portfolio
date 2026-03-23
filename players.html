@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Харваачид & Рейтинг — АМША</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<nav>
+  <a href="index.html" class="nav-logo">
+    <div class="emblem"><span>Ш</span></div>
+    <div class="brand"><span class="brand-main">АМША</span><span class="brand-sub">Американ Монгол Шагай Харваа</span></div>
+  </a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Нүүр</a></li>
+    <li><a href="tournaments.html">Тэмцээн</a></li>
+    <li><a href="clubs.html">Клубууд</a></li>
+    <li><a href="players.html" class="active">Харваачид</a></li>
+    <li><a href="about.html">Бидний тухай</a></li>
+  </ul>
+  <div class="nav-hamburger" onclick="toggleNav()"><span></span><span></span><span></span></div>
+</nav>
+<div class="page">
+
+  <section style="padding:5rem 2rem 3.5rem;text-align:center;position:relative;overflow:hidden;background:var(--surface);border-bottom:1px solid var(--border)">
+    <div class="hero-bg"></div>
+    <span class="tag" style="position:relative">✦ 2026 улирлын</span>
+    <h1 style="font-family:'Cormorant Garamond',serif;font-size:clamp(2.5rem,6vw,4.5rem);font-weight:700;color:var(--cream);line-height:1.05;margin-top:.5rem;position:relative">Харваачид &<br><span style="color:var(--gold)">Оноо</span></h1>
+    <p style="color:var(--muted);max-width:480px;margin:.8rem auto 0;position:relative">Оноо нь тэмцээний үр дүнгээс тооцоологдоно. Жилийн 4 том тэмцээнд оролцсон байдлаар дүгнэгдэнэ.</p>
+  </section>
+
+  <section class="section">
+    <div class="container">
+
+      <!-- TABS -->
+      <div style="display:flex;gap:.5rem;margin-bottom:1.5rem;flex-wrap:wrap">
+        <button class="tab-btn active" onclick="switchTab('all',this)">🌐 Нийт рейтинг</button>
+        <button class="tab-btn" onclick="switchTab('west',this)">🌄 Баруун бүс</button>
+        <button class="tab-btn" onclick="switchTab('east',this)">🌆 Зүүн бүс</button>
+      </div>
+
+      <!-- FILTER -->
+      <div class="filter-bar">
+        <input type="text" id="searchInput" placeholder="🔍 Тамирчин хайх..." oninput="filterTable()"/>
+        <select id="clubFilter" onchange="filterTable()">
+          <option value="">Бүх клуб</option>
+          <option>Denver Монголс</option>
+          <option>Цэцэн Билигт клуб</option>
+          <option>Rocky Mountain Shagai</option>
+          <option>LA Шагай клуб</option>
+          <option>California Mongols</option>
+          <option>Seattle Нуур клуб</option>
+          <option>Bay Area Mongols</option>
+          <option>New York Нутаг</option>
+          <option>Manhattan Shagai</option>
+          <option>Queens Mongols</option>
+          <option>Chicago Өргөө</option>
+          <option>DC Монгол клуб</option>
+          <option>Boston Mongols</option>
+        </select>
+      </div>
+
+      <!-- TABLE (shared, filtered by JS) -->
+      <div id="tab-all" class="tab-content active">
+        <div style="border:1px solid var(--border);border-radius:12px;overflow:hidden;background:var(--surface)">
+          <table class="ranking-table" id="mainTable">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Тамирчин</th>
+                <th>Бүс</th>
+                <th>Клуб</th>
+                <th>Хот</th>
+                <th>Тэмцээн</th>
+                <th>Цол</th>
+                <th>Оноо</th>
+              </tr>
+            </thead>
+            <tbody id="tableBody">
+              <!-- JS renders rows -->
+            </tbody>
+          </table>
+        </div>
+        <p id="noResults" style="display:none;text-align:center;color:var(--muted);padding:3rem">Тамирчин олдсонгүй.</p>
+      </div>
+
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  <div class="footer-grid">
+    <div><a href="index.html" class="nav-logo"><div class="emblem"><span>Ш</span></div><div class="brand"><span class="brand-main">АМША</span></div></a><p class="footer-brand-desc">Америк дахь Монгол шагай харвааны уламжлалыг хойч үедээ өвлүүлэн хадгалж хөгжүүлнэ.</p></div>
+    <div><h5>Цэс</h5><ul><li><a href="index.html">Нүүр</a></li><li><a href="tournaments.html">Тэмцээн</a></li><li><a href="clubs.html">Клубууд</a></li><li><a href="players.html">Харваачид</a></li><li><a href="about.html">Бидний тухай</a></li></ul></div>
+    <div><h5>Бүс</h5><ul><li><a href="clubs.html#west">Баруун бүс</a></li><li><a href="clubs.html#east">Зүүн бүс</a></li></ul></div>
+    <div><h5>Холбоо барих</h5><ul><li><a href="mailto:info@amsha.org">info@amsha.org</a></li></ul></div>
+  </div>
+  <div class="footer-bottom"><span>© 2026 АМША. Бүх эрх хуулиар хамгаалагдсан.</span><span>🇲🇳 Made with pride in America</span></div>
+</footer>
+
+<script>
+const players = [
+  {rank:1, init:'БД', name:'Батдорж Дагва',       region:'west', club:'Denver Монголс',     city:'Denver, CO',         events:4, score:10, title:'Гоц мэргэн'},
+  {rank:2, init:'ОБ', name:'Оюунбаатар Батжаргал',region:'east', club:'New York Нутаг',     city:'New York, NY',       events:4, score:9,  title:'Аймаг мэргэн'},
+  {rank:3, init:'ГС', name:'Ганзориг Сүхбаатар',  region:'east', club:'Chicago Өргөө',      city:'Chicago, IL',        events:4, score:8,  title:'Залуу харваач'},
+  {rank:4, init:'НА', name:'Нарантуяа Алтансүх',  region:'west', club:'LA Шагай клуб',      city:'Los Angeles, CA',    events:3, score:7,  title:'Гоц мэргэн'},
+  {rank:5, init:'ЭМ', name:'Энхжаргал Мөнхбаяр',  region:'west', club:'Seattle Нуур клуб',  city:'Seattle, WA',        events:4, score:6,  title:'Аймаг мэргэн'},
+  {rank:6, init:'ДЦ', name:'Долгормаа Цэрэнпунцаг',region:'east',club:'DC Монгол клуб',     city:'Washington, DC',     events:3, score:5,  title:'Залуу харваач'},
+  {rank:7, init:'ББ', name:'Батбаяр Болормаа',    region:'west', club:'Цэцэн Билигт клуб',  city:'Denver, CO',         events:4, score:4,  title:'Гоц мэргэн'},
+  {rank:8, init:'МС', name:'Мөнхсайхан Сэргэлэн', region:'east', club:'Manhattan Shagai',   city:'New York, NY',       events:3, score:3,  title:'Аймаг мэргэн'},
+  {rank:9, init:'ТД', name:'Түвшинбаяр Дамдин',   region:'west', club:'Rocky Mountain Shagai',city:'Denver, CO',       events:4, score:2,  title:'Залуу харваач'},
+  {rank:10,init:'АН', name:'Алтанцэцэг Намсрай',  region:'east', club:'Boston Mongols',     city:'Boston, MA',         events:3, score:1,  title:'Гоц мэргэн'},
+  {rank:11,init:'БЭ', name:'Болд Эрдэнэбат',      region:'west', club:'Bay Area Mongols',   city:'San Francisco, CA',  events:2, score:10, title:'Аймаг мэргэн'},
+  {rank:12,init:'СО', name:'Солонго Отгонбаяр',   region:'east', club:'Queens Mongols',     city:'New York, NY',       events:3, score:9,  title:'Залуу харваач'},
+  {rank:13,init:'ХТ', name:'Хишигтогтох Тэлмэн',  region:'west', club:'California Mongols', city:'Los Angeles, CA',    events:3, score:8,  title:'Гоц мэргэн'},
+  {rank:14,init:'ЧГ', name:'Чулуунбаатар Гантулга',region:'east',club:'DC Монгол клуб',     city:'Washington, DC',     events:2, score:7,  title:'Аймаг мэргэн'},
+  {rank:15,init:'РБ', name:'Рэнчинханд Батсуурь',  region:'west', club:'Pacific Shagai',    city:'Seattle, WA',        events:3, score:6,  title:'Залуу харваач'},
+];
+
+let currentRegion = 'all';
+
+function renderTable(data){
+  const tbody = document.getElementById('tableBody');
+  const noRes = document.getElementById('noResults');
+  if(!data.length){ tbody.innerHTML=''; noRes.style.display='block'; return; }
+  noRes.style.display='none';
+  tbody.innerHTML = data.map(p=>`
+    <tr data-region="${p.region}" data-club="${p.club}">
+      <td><span class="rank-num ${p.rank<=3?'top3':''}">${p.rank}</span></td>
+      <td><a href="player-detail.html?id=${p.init}" style="text-decoration:none;color:inherit"><div class="player-name-cell"><div class="player-avatar">${p.init}</div><div><div class="player-full-name">${p.name}</div><div class="player-club">${p.club}</div></div></div></a></td>
+      <td><span class="pill ${p.region==='west'?'pill-west':'pill-east'}">${p.region==='west'?'Баруун':'Зүүн'}</span></td>
+      <td style="color:var(--muted);font-size:.88rem">${p.club}</td>
+      <td style="color:var(--muted);font-size:.85rem">${p.city}</td>
+      <td style="color:var(--muted);text-align:center">${p.events}</td>
+      <td style="color:var(--muted);font-size:.88rem">${p.title}</td>
+      <td><span class="score-val">${p.score}</span></td>
+    </tr>`).join('');
+}
+
+function filterTable(){
+  const search = document.getElementById('searchInput').value.toLowerCase();
+  const club   = document.getElementById('clubFilter').value;
+  let filtered = players.filter(p=>{
+    const matchRegion = currentRegion==='all' || p.region===currentRegion;
+    const matchSearch = p.name.toLowerCase().includes(search) || p.club.toLowerCase().includes(search);
+    const matchClub   = !club || p.club===club;
+    return matchRegion && matchSearch && matchClub;
+  });
+  renderTable(filtered);
+}
+
+function switchTab(region, btn){
+  currentRegion = region;
+  document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  filterTable();
+}
+
+function toggleNav(){document.getElementById('navLinks').classList.toggle('open');}
+
+renderTable(players);
+</script>
+</body>
+</html>
