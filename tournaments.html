@@ -4,7 +4,7 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
   <title>Тэмцээн — АМША</title>
-  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="assets/css/style.css"/>
 </head>
 <body>
 <nav>
@@ -40,138 +40,12 @@
 
       <!-- UPCOMING -->
       <div class="tab-content active" id="tab-upcoming">
-        <div style="display:flex;flex-direction:column;gap:2.5rem">
-
-          <!-- NATIONAL -->
-          <div style="border:1px solid rgba(212,168,67,.3);border-radius:14px;overflow:hidden;background:var(--surface)">
-            <div style="padding:1.5rem 2rem;background:linear-gradient(90deg,rgba(212,168,67,.08),transparent);border-bottom:1px solid rgba(212,168,67,.2);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem">
-              <div>
-                <div style="display:flex;align-items:center;gap:.75rem;margin-bottom:.4rem">
-                  <span class="pill pill-gold">🏆 Үндэсний</span>
-                  <span class="t-status soon">Удахгүй болно</span>
-                </div>
-                <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.5rem;color:var(--cream)">Америкийн Аварга Шалгаруулалт 2026</h3>
-              </div>
-              <a href="#" class="btn btn-gold btn-sm">Бүртгэл →</a>
-            </div>
-            <div style="padding:1.5rem 2rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1.5rem">
-              <div><div style="font-size:.72rem;color:var(--muted);letter-spacing:.1em;text-transform:uppercase;margin-bottom:.3rem">Огноо</div><div style="color:var(--cream);font-weight:500">2026 оны 11-р сарын 9–10</div></div>
-              <div><div style="font-size:.72rem;color:var(--muted);letter-spacing:.1em;text-transform:uppercase;margin-bottom:.3rem">Газар</div><div style="color:var(--cream);font-weight:500">Kentucky Louisville</div><div style="font-size:.8rem;color:var(--muted)">Las Vegas, Nevada</div></div>
-              <div><div style="font-size:.72rem;color:var(--muted);letter-spacing:.1em;text-transform:uppercase;margin-bottom:.3rem">Оролцогчид</div><div style="color:var(--cream);font-weight:500">Бүх бүсийн шилдгүүд</div><div style="font-size:.8rem;color:var(--muted)">Рейтингийн дагуу шалгарна</div></div>
-              <div><div style="font-size:.72rem;color:var(--muted);letter-spacing:.1em;text-transform:uppercase;margin-bottom:.3rem">Бүртгэлийн хугацаа</div><div style="color:var(--cream);font-weight:500">10-р сарын 25 хүртэл</div></div>
-            </div>
-          </div>
-
-          <!-- WEST REGIONAL -->
-          <div style="border:1px solid rgba(192,57,43,.3);border-radius:14px;overflow:hidden;background:var(--surface)">
-            <div style="padding:1.5rem 2rem;background:linear-gradient(90deg,rgba(192,57,43,.06),transparent);border-bottom:1px solid rgba(192,57,43,.2);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem">
-              <div>
-                <div style="display:flex;align-items:center;gap:.75rem;margin-bottom:.4rem">
-                  <span class="pill pill-west">🌄 Баруун бүс</span>
-                  <span class="t-status open">Бүртгэл нээлттэй</span>
-                </div>
-                <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.5rem;color:var(--cream)">Баруун Бүсийн Аварга 2026</h3>
-              </div>
-              <a href="#" class="btn btn-sm" style="background:rgba(192,57,43,.2);color:#e74c3c;border:1px solid rgba(192,57,43,.4)">Бүртгүүлэх →</a>
-            </div>
-            <div style="padding:1.5rem 2rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1.5rem">
-              <div><div style="font-size:.72rem;color:var(--muted);letter-spacing:.1em;text-transform:uppercase;margin-bottom:.3rem">Огноо</div><div style="color:var(--cream);font-weight:500">2026 оны 6-р сарын 6–10</div></div>
-              <div><div style="font-size:.72rem;color:var(--muted);letter-spacing:.1em;text-transform:uppercase;margin-bottom:.3rem">Газар</div><div style="color:var(--cream);font-weight:500">Utah Salt Lake</div><div style="font-size:.8rem;color:var(--muted)">Denver, Colorado</div></div>
-              <div><div style="font-size:.72rem;color:var(--muted);letter-spacing:.1em;text-transform:uppercase;margin-bottom:.3rem">Оролцогчид</div><div style="color:var(--cream);font-weight:500">Баруун бүсийн клубууд</div><div style="font-size:.8rem;color:var(--muted)">CO, CA, WA, AZ, NV...</div></div>
-              <div><div style="font-size:.72rem;color:var(--muted);letter-spacing:.1em;text-transform:uppercase;margin-bottom:.3rem">Бүртгэлийн хугацаа</div><div style="color:var(--cream);font-weight:500">5-р сарын 1 хүртэл</div></div>
-            </div>
-          </div>
-
-          <!-- EAST REGIONAL -->
-          <div style="border:1px solid rgba(41,128,185,.3);border-radius:14px;overflow:hidden;background:var(--surface)">
-            <div style="padding:1.5rem 2rem;background:linear-gradient(90deg,rgba(41,128,185,.06),transparent);border-bottom:1px solid rgba(41,128,185,.2);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem">
-              <div>
-                <div style="display:flex;align-items:center;gap:.75rem;margin-bottom:.4rem">
-                  <span class="pill pill-east">🌆 Зүүн бүс</span>
-                  <span class="t-status open">Бүртгэл нээлттэй</span>
-                </div>
-                <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.5rem;color:var(--cream)">Зүүн Бүсийн Аварга 2026</h3>
-              </div>
-              <a href="#" class="btn btn-sm" style="background:rgba(41,128,185,.2);color:#5dade2;border:1px solid rgba(41,128,185,.4)">Бүртгүүлэх →</a>
-            </div>
-            <div style="padding:1.5rem 2rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1.5rem">
-              <div><div style="font-size:.72rem;color:var(--muted);letter-spacing:.1em;text-transform:uppercase;margin-bottom:.3rem">Огноо</div><div style="color:var(--cream);font-weight:500">2026 оны 4-р сарын 18</div></div>
-              <div><div style="font-size:.72rem;color:var(--muted);letter-spacing:.1em;text-transform:uppercase;margin-bottom:.3rem">Газар</div><div style="color:var(--cream);font-weight:500">DC Washington</div><div style="font-size:.8rem;color:var(--muted)">New York, NY</div></div>
-              <div><div style="font-size:.72rem;color:var(--muted);letter-spacing:.1em;text-transform:uppercase;margin-bottom:.3rem">Оролцогчид</div><div style="color:var(--cream);font-weight:500">Зүүн бүсийн клубууд</div><div style="font-size:.8rem;color:var(--muted)">NY, IL, DC, MA, VA...</div></div>
-              <div><div style="font-size:.72rem;color:var(--muted);letter-spacing:.1em;text-transform:uppercase;margin-bottom:.3rem">Бүртгэлийн хугацаа</div><div style="color:var(--cream);font-weight:500">6-р сарын 1 хүртэл</div></div>
-            </div>
-          </div>
-
-          <!-- TUURUM -->
-          <div style="border:1px solid rgba(142,68,173,.3);border-radius:14px;overflow:hidden;background:var(--surface)">
-            <div style="padding:1.5rem 2rem;background:linear-gradient(90deg,rgba(142,68,173,.06),transparent);border-bottom:1px solid rgba(142,68,173,.2);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem">
-              <div>
-                <div style="display:flex;align-items:center;gap:.75rem;margin-bottom:.4rem">
-                  <span class="pill" style="background:rgba(142,68,173,.15);border:1px solid rgba(142,68,173,.4);color:#bb8fce">🎯 Тусгай</span>
-                  <span class="t-status closed">Бүртгэл удахгүй нээнэ</span>
-                </div>
-                <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.5rem;color:var(--cream)">Тойром Харваа 2026</h3>
-              </div>
-            </div>
-            <div style="padding:1.5rem 2rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1.5rem">
-              <div><div style="font-size:.72rem;color:var(--muted);letter-spacing:.1em;text-transform:uppercase;margin-bottom:.3rem">Огноо</div><div style="color:var(--cream);font-weight:500">2026 оны 10-р сарын 4–5</div></div>
-              <div><div style="font-size:.72rem;color:var(--muted);letter-spacing:.1em;text-transform:uppercase;margin-bottom:.3rem">Газар</div><div style="color:var(--cream);font-weight:500">Denver Colorado</div><div style="font-size:.8rem;color:var(--muted)">Chicago, Illinois</div></div>
-              <div><div style="font-size:.72rem;color:var(--muted);letter-spacing:.1em;text-transform:uppercase;margin-bottom:.3rem">Тоглолтын формат</div><div style="color:var(--cream);font-weight:500">Тойром (Round Robin)</div><div style="font-size:.8rem;color:var(--muted)">Нээлттэй бүх Харваачид</div></div>
-              <div><div style="font-size:.72rem;color:var(--muted);letter-spacing:.1em;text-transform:uppercase;margin-bottom:.3rem">Бүртгэл нээгдэх</div><div style="color:var(--cream);font-weight:500">9-р сарын 1-нд</div></div>
-            </div>
-          </div>
-
-        </div>
+        <div id="upcomingList" style="display:flex;flex-direction:column;gap:2.5rem"></div>
       </div><!-- /upcoming -->
 
       <!-- RESULTS -->
       <div class="tab-content" id="tab-results">
-        <div class="result-block">
-          <div class="result-header">
-            <div>
-              <span class="pill pill-gold" style="margin-bottom:.4rem">🏆 Үндэсний</span>
-              <div class="result-title">Америкийн Аварга 2025 — Эцсийн дүн</div>
-            </div>
-            <span style="font-size:.8rem;color:var(--muted)">2025 оны 8-р сар · Phoenix, AZ</span>
-          </div>
-          <table class="result-table">
-            <tr><td><span class="medal">🥇</span></td><td style="color:var(--cream);font-weight:500">Батдорж Дагва</td><td><span class="pill pill-west">Баруун</span></td><td style="color:var(--muted)">Denver Монголс</td><td style="color:var(--gold);font-weight:600">1-р байр</td></tr>
-            <tr><td><span class="medal">🥈</span></td><td style="color:var(--cream);font-weight:500">Оюунбаатар Батжаргал</td><td><span class="pill pill-east">Зүүн</span></td><td style="color:var(--muted)">New York Нутаг</td><td style="color:var(--muted)">2-р байр</td></tr>
-            <tr><td><span class="medal">🥉</span></td><td style="color:var(--cream);font-weight:500">Ганзориг Сүхбаатар</td><td><span class="pill pill-east">Зүүн</span></td><td style="color:var(--muted)">Chicago Өргөө</td><td style="color:var(--muted)">3-р байр</td></tr>
-            <tr><td>4</td><td style="color:var(--cream)">Нарантуяа Алтансүх</td><td><span class="pill pill-west">Баруун</span></td><td style="color:var(--muted)">LA Шагай</td><td style="color:var(--muted)">4-р байр</td></tr>
-            <tr><td>5</td><td style="color:var(--cream)">Энхжаргал Мөнхбаяр</td><td><span class="pill pill-west">Баруун</span></td><td style="color:var(--muted)">Seattle Нуур</td><td style="color:var(--muted)">5-р байр</td></tr>
-          </table>
-        </div>
-
-        <div class="result-block">
-          <div class="result-header">
-            <div>
-              <span class="pill pill-west" style="margin-bottom:.4rem">🌄 Баруун бүс</span>
-              <div class="result-title">Баруун Бүсийн Аварга 2025</div>
-            </div>
-            <span style="font-size:.8rem;color:var(--muted)">2025 оны 5-р сар · Denver, CO</span>
-          </div>
-          <table class="result-table">
-            <tr><td><span class="medal">🥇</span></td><td style="color:var(--cream);font-weight:500">Батдорж Дагва</td><td style="color:var(--muted)">Denver Монголс</td><td style="color:var(--gold);font-weight:600">1-р байр</td></tr>
-            <tr><td><span class="medal">🥈</span></td><td style="color:var(--cream);font-weight:500">Нарантуяа Алтансүх</td><td style="color:var(--muted)">LA Шагай</td><td style="color:var(--muted)">2-р байр</td></tr>
-            <tr><td><span class="medal">🥉</span></td><td style="color:var(--cream);font-weight:500">Энхжаргал Мөнхбаяр</td><td style="color:var(--muted)">Seattle Нуур</td><td style="color:var(--muted)">3-р байр</td></tr>
-          </table>
-        </div>
-
-        <div class="result-block">
-          <div class="result-header">
-            <div>
-              <span class="pill pill-east" style="margin-bottom:.4rem">🌆 Зүүн бүс</span>
-              <div class="result-title">Зүүн Бүсийн Аварга 2025</div>
-            </div>
-            <span style="font-size:.8rem;color:var(--muted)">2025 оны 6-р сар · New York, NY</span>
-          </div>
-          <table class="result-table">
-            <tr><td><span class="medal">🥇</span></td><td style="color:var(--cream);font-weight:500">Оюунбаатар Батжаргал</td><td style="color:var(--muted)">New York Нутаг</td><td style="color:var(--gold);font-weight:600">1-р байр</td></tr>
-            <tr><td><span class="medal">🥈</span></td><td style="color:var(--cream);font-weight:500">Ганзориг Сүхбаатар</td><td style="color:var(--muted)">Chicago Өргөө</td><td style="color:var(--muted)">2-р байр</td></tr>
-            <tr><td><span class="medal">🥉</span></td><td style="color:var(--cream);font-weight:500">Долгормаа Цэрэнпунцаг</td><td style="color:var(--muted)">DC Монгол</td><td style="color:var(--muted)">3-р байр</td></tr>
-          </table>
-        </div>
+        <div id="resultsList"></div>
       </div><!-- /results -->
 
     </div>
@@ -187,6 +61,7 @@
   </div>
   <div class="footer-bottom"><span>© 2026 АМША. Бүх эрх хуулиар хамгаалагдсан.</span><span>🇲🇳 Made with pride in America</span></div>
 </footer>
+<script src="assets/js/tournaments-data.js"></script>
 <script>
 function toggleNav(){document.getElementById('navLinks').classList.toggle('open');}
 function switchTab(id,btn){
@@ -195,6 +70,82 @@ function switchTab(id,btn){
   document.getElementById('tab-'+id).classList.add('active');
   btn.classList.add('active');
 }
+
+function getPillClass(category) {
+  if (category === 'national') return 'pill-gold';
+  if (category === 'west') return 'pill-west';
+  if (category === 'east') return 'pill-east';
+  return '';
+}
+
+function getUpcomingBorder(category) {
+  if (category === 'national') return 'rgba(212,168,67,.3)';
+  if (category === 'west') return 'rgba(192,57,43,.3)';
+  if (category === 'east') return 'rgba(41,128,185,.3)';
+  return 'rgba(142,68,173,.3)';
+}
+
+function getUpcomingHeaderBg(category) {
+  if (category === 'national') return 'linear-gradient(90deg,rgba(212,168,67,.08),transparent)';
+  if (category === 'west') return 'linear-gradient(90deg,rgba(192,57,43,.06),transparent)';
+  if (category === 'east') return 'linear-gradient(90deg,rgba(41,128,185,.06),transparent)';
+  return 'linear-gradient(90deg,rgba(142,68,173,.06),transparent)';
+}
+
+function renderUpcoming() {
+  const container = document.getElementById('upcomingList');
+  const data = (window.tournamentsData && window.tournamentsData.upcoming) || [];
+  container.innerHTML = data.map(t => `
+    <div style="border:1px solid ${getUpcomingBorder(t.category)};border-radius:14px;overflow:hidden;background:var(--surface)">
+      <div style="padding:1.5rem 2rem;background:${getUpcomingHeaderBg(t.category)};border-bottom:1px solid ${getUpcomingBorder(t.category)};display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem">
+        <div>
+          <div style="display:flex;align-items:center;gap:.75rem;margin-bottom:.4rem">
+            <span class="pill ${getPillClass(t.category)}">${t.pill}</span>
+            <span class="t-status ${t.statusClass}">${t.statusText}</span>
+          </div>
+          <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.5rem;color:var(--cream)">${t.title}</h3>
+        </div>
+        ${t.cta ? `<a href="#" class="btn btn-gold btn-sm">${t.cta}</a>` : ''}
+      </div>
+      <div style="padding:1.5rem 2rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1.5rem">
+        <div><div style="font-size:.72rem;color:var(--muted);letter-spacing:.1em;text-transform:uppercase;margin-bottom:.3rem">Огноо</div><div style="color:var(--cream);font-weight:500">${t.date}</div></div>
+        <div><div style="font-size:.72rem;color:var(--muted);letter-spacing:.1em;text-transform:uppercase;margin-bottom:.3rem">Газар</div><div style="color:var(--cream);font-weight:500">${t.venue}</div><div style="font-size:.8rem;color:var(--muted)">${t.venueSub}</div></div>
+        <div><div style="font-size:.72rem;color:var(--muted);letter-spacing:.1em;text-transform:uppercase;margin-bottom:.3rem">Оролцогчид</div><div style="color:var(--cream);font-weight:500">${t.participants}</div><div style="font-size:.8rem;color:var(--muted)">${t.participantsSub}</div></div>
+        <div><div style="font-size:.72rem;color:var(--muted);letter-spacing:.1em;text-transform:uppercase;margin-bottom:.3rem">Бүртгэлийн хугацаа</div><div style="color:var(--cream);font-weight:500">${t.registration}</div></div>
+      </div>
+    </div>
+  `).join('');
+}
+
+function renderResults() {
+  const container = document.getElementById('resultsList');
+  const data = (window.tournamentsData && window.tournamentsData.results) || [];
+  container.innerHTML = data.map(r => `
+    <div class="result-block">
+      <div class="result-header">
+        <div>
+          <span class="pill ${getPillClass(r.category)}" style="margin-bottom:.4rem">${r.pill}</span>
+          <div class="result-title">${r.title}</div>
+        </div>
+        <span style="font-size:.8rem;color:var(--muted)">${r.meta}</span>
+      </div>
+      <table class="result-table">
+        ${r.standings.map(s => `
+          <tr>
+            <td><span class="medal">${s.medal}</span></td>
+            <td style="color:var(--cream);font-weight:500">${s.name}</td>
+            ${s.region ? `<td><span class="pill ${s.region === 'west' ? 'pill-west' : 'pill-east'}">${s.region === 'west' ? 'Баруун' : 'Зүүн'}</span></td>` : ''}
+            <td style="color:var(--muted)">${s.club}</td>
+            <td style="color:${s.highlight ? 'var(--gold)' : 'var(--muted)'};font-weight:${s.highlight ? '600' : '400'}">${s.place}</td>
+          </tr>
+        `).join('')}
+      </table>
+    </div>
+  `).join('');
+}
+
+renderUpcoming();
+renderResults();
 </script>
 </body>
 </html>

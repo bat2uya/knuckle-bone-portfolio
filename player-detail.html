@@ -4,7 +4,7 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
   <title>Тамирчины дэлгэрэнгүй - АМША</title>
-  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="assets/css/style.css"/>
   <style>
     .player-detail-hero {
       display: grid;
@@ -160,8 +160,8 @@
             <span id="playerTitle" class="highlight">Гоц мэргэн</span>
           </div>
           <div class="meta-item">
-            <label>Рейтинг</label>
-            <span id="playerRank" class="highlight">#1</span>
+            <label>Баг</label>
+            <span id="playerTeam" class="highlight">Argai</span>
           </div>
           <div class="meta-item">
             <label>Клуб</label>
@@ -224,24 +224,8 @@
   <div class="footer-bottom"><span>© 2026 АМША. Бүх эрх хуулиар хамгаалагдсан.</span><span>🇲🇳 Made with pride in America</span></div>
 </footer>
 
+<script src="assets/js/players-data.js"></script>
 <script>
-const playersData = [
-  {rank:1, init:'БД', name:'Батдорж Дагва',       region:'west', club:'Denver Монголс',     city:'Denver, CO',         events:4, score:10, title:'Гоц мэргэн', bio:'Батдорж Дагва бол АМША-ийн шилдэг тамирчдын нэг бөгөөд, жилийн 4 том тэмцээнд оролцож үзүүлэхүүс сайн байдаг. Түүний гоцын хүч, сургалтын хичээлшил нь түүнийг давуу байр рүүгээ авчирсан.', wins:2, pctWin:'85%'},
-  {rank:2, init:'ОБ', name:'Оюунбаатар Батжаргал',region:'east', club:'New York Нутаг',     city:'New York, NY',       events:4, score:9,  title:'Аймаг мэргэн', bio:'Оюунбаатар Батжаргал нь Нью Йорк муж дахь хамгийн үзүүлэхүүсийн сайн тамирчин бөгөөд, бүх их ажиллагаандаа идэвхитэй оролцож байна.', wins:3, pctWin:'88%'},
-  {rank:3, init:'ГС', name:'Ганзориг Сүхбаатар',  region:'east', club:'Chicago Өргөө',      city:'Chicago, IL',        events:4, score:8,  title:'Залуу харваач', bio:'Ганзориг Сүхбаатар энэ жил шинээр нээгдэх тамирчин бөгөөд, түүний шинэлэг аргууд нь маш олонхийг сонирхож байна.', wins:2, pctWin:'80%'},
-  {rank:4, init:'НА', name:'Нарантуяа Алтансүх',  region:'west', club:'LA Шагай клуб',      city:'Los Angeles, CA',    events:3, score:7,  title:'Гоц мэргэн', bio:'Нарантуяа Алтансүх нь Ангараас иржээ. Түүний сургалтын үйл явц нь маш үр өгөөжтэй байдаг.', wins:2, pctWin:'82%'},
-  {rank:5, init:'ЭМ', name:'Энхжаргал Мөнхбаяр',  region:'west', club:'Seattle Нуур клуб',  city:'Seattle, WA',        events:4, score:6,  title:'Аймаг мэргэн', bio:'Энхжаргал Мөнхбаяр нь Сиэтлийн урхигуур ба сэнгэлгүүр юм. Түүний үйл ажиллагаа нь сайн дүрс ферийл байна.', wins:2, pctWin:'78%'},
-  {rank:6, init:'ДЦ', name:'Долгормаа Цэрэнпунцаг',region:'east',club:'DC Монгол клуб',     city:'Washington, DC',     events:3, score:5,  title:'Залуу харваач', bio:'Долгормаа Цэрэнпунцаг нь үнэндээ залуу ч урвалхын оюу нь маш өндөр байдаг.', wins:1, pctWin:'75%'},
-  {rank:7, init:'ББ', name:'Батбаяр Болормаа',    region:'west', club:'Цэцэн Билигт клуб',  city:'Denver, CO',         events:4, score:4,  title:'Гоц мэргэн', bio:'Батбаяр Болормаа нь цэцэн шинжтэй ба түүний сургалтын дарга болох чадварыг бүгд хүлээн зөвшөөрдөг.', wins:1, pctWin:'72%'},
-  {rank:8, init:'МС', name:'Мөнхсайхан Сэргэлэн', region:'east', club:'Manhattan Shagai',   city:'New York, NY',       events:3, score:3,  title:'Аймаг мэргэн', bio:'Мөнхсайхан Сэргэлэн нь Үлэмжит даалгаварыг гүйцэтгэж байна. Түүний эргүүлэлтийн үйл явц нь маш авхаалжсан байдаг.', wins:1, pctWin:'70%'},
-  {rank:9, init:'ТД', name:'Түвшинбаяр Дамдин',   region:'west', club:'Rocky Mountain Shagai',city:'Denver, CO',       events:4, score:2,  title:'Залуу харваач', bio:'Түвшинбаяр Дамдин нь гүнзгийрүүлэн сургаж байгаа залуу сона юм. Түүний ирээдүй маш сайн байх магадлал өндөр.', wins:0, pctWin:'65%'},
-  {rank:10,init:'АН', name:'Алтанцэцэг Намсрай',  region:'east', club:'Boston Mongols',     city:'Boston, MA',         events:3, score:1,  title:'Гоц мэргэн', bio:'Алтанцэцэг Намсрай нь цэцэг сурчээр идэвхитэй сургаж байна. Түүний байр суурь нь маш цэвэр байна.', wins:0, pctWin:'60%'},
-  {rank:11,init:'БЭ', name:'Болд Эрдэнэбат',      region:'west', club:'Bay Area Mongols',   city:'San Francisco, CA',  events:2, score:10, title:'Аймаг мэргэн', bio:'Болд Эрдэнэбат нь залуу, гэхдээ туршлагатай тамирчин юм. Түүний мартах ёсгүй ойн хүч нь маш сайн.', wins:2, pctWin:'85%'},
-  {rank:12,init:'СО', name:'Солонго Отгонбаяр',   region:'east', club:'Queens Mongols',     city:'New York, NY',       events:3, score:9,  title:'Залуу харваач', bio:'Солонго Отгонбаяр нь сайн баяртай, бүх арга хэвлэлтэй оролцож байна. Түүний сургалт нь үр өгөөжтэй байдаг.', wins:2, pctWin:'83%'},
-  {rank:13,init:'ХТ', name:'Хишигтогтох Тэлмэн',  region:'west', club:'California Mongols', city:'Los Angeles, CA',    events:3, score:8,  title:'Гоц мэргэн', bio:'Хишигтогтох Тэлмэн нь чадварлаг ба авхаалжсан оюутан юм. Түүний ноолвор нь олон улсын үр дүн авч байна.', wins:2, pctWin:'81%'},
-  {rank:14,init:'ЧГ', name:'Чулуунбаатар Гантулга',region:'east',club:'DC Монгол клуб',     city:'Washington, DC',     events:2, score:7,  title:'Аймаг мэргэн', bio:'Чулуунбаатар Гантулга нь сүүлийн үед АМША-д элсэн ирэн, удаан хугацаа идэвхитэй ажиллаж байна.', wins:1, pctWin:'77%'},
-  {rank:15,init:'РБ', name:'Рэнчинханд Батсуурь',  region:'west', club:'Pacific Shagai',    city:'Seattle, WA',        events:3, score:6,  title:'Залуу харваач', bio:'Рэнчинханд Батсуурь нь сайхан оюун хүсэл бүхий залуу сона юм. Түүний ирээдүй нь маш гэрэлтүүлэгч байх магадлал өндөр.', wins:1, pctWin:'74%'},
-];
 
 function getPlayerFromUrl() {
   const params = new URLSearchParams(window.location.search);
@@ -255,7 +239,8 @@ function displayPlayer() {
     return;
   }
   
-  const player = playersData.find(p => p.init === playerId);
+  const players = typeof window.getAllPlayers === 'function' ? window.getAllPlayers() : [];
+  const player = players.find(p => p.init === playerId);
   if (!player) {
     window.location.href = 'players.html';
     return;
@@ -264,7 +249,7 @@ function displayPlayer() {
   document.getElementById('playerName').textContent = player.name;
   document.getElementById('playerPhoto').textContent = player.init;
   document.getElementById('playerTitle').textContent = player.title;
-  document.getElementById('playerRank').textContent = '#' + player.rank;
+  document.getElementById('playerTeam').textContent = player.team || '-';
   document.getElementById('playerClub').textContent = player.club;
   document.getElementById('playerRegion').textContent = player.region === 'west' ? 'Баруун' : 'Зүүн';
   document.getElementById('playerCity').textContent = player.city;

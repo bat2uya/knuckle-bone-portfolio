@@ -4,7 +4,7 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
   <title>АМША — Америкийн Монгол Шагай Харваа</title>
-  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="assets/css/style.css"/>
 </head>
 <body>
 
@@ -58,11 +58,11 @@
       <div class="stat-label">Бүс</div>
     </div>
     <div class="stat-item">
-      <div class="stat-num">12+</div>
+      <div class="stat-num" id="clubsCount">0</div>
       <div class="stat-label">Клуб</div>
     </div>
     <div class="stat-item">
-      <div class="stat-num">60+</div>
+      <div class="stat-num" id="teamsCount">0</div>
       <div class="stat-label">Баг</div>
     </div>
     <div class="stat-item">
@@ -70,7 +70,7 @@
       <div class="stat-label">Том тэмцээн / жил</div>
     </div>
     <div class="stat-item">
-      <div class="stat-num">300+</div>
+      <div class="stat-num" id="playersCount">0</div>
       <div class="stat-label">Харваачид</div>
     </div>
   </div>
@@ -84,52 +84,7 @@
         <div class="rule"></div>
         <p class="section-sub">Жил бүр болдог дөрвөн үндсэн тэмцээнд бүх бүс, клубуудаас Харваачид оролцдог.</p>
       </div>
-      <div class="tournament-grid">
-        <div class="t-card national fade-up">
-          <div class="t-icon">🏆</div>
-          <div style="margin-bottom:.6rem"><span class="pill pill-gold">Үндэсний</span></div>
-          <h3>Америкийн Аварга Шалгаруулалт</h3>
-          <div class="t-meta">
-            <span>📅 2026 оны 8-р сарын 9–10</span>
-            <span>📍 Las Vegas, Nevada</span>
-            <span>👥 Бүх бүсийн шилдгүүд</span>
-          </div>
-          <div><span class="t-status soon">Удахгүй болно</span></div>
-        </div>
-        <div class="t-card west fade-up">
-          <div class="t-icon">🌄</div>
-          <div style="margin-bottom:.6rem"><span class="pill pill-west">Баруун бүс</span></div>
-          <h3>Баруун Бүсийн Аварга</h3>
-          <div class="t-meta">
-            <span>📅 2026 оны 5-р сарын 17–18</span>
-            <span>📍 Denver, Colorado</span>
-            <span>👥 Баруун бүсийн клубууд</span>
-          </div>
-          <div><span class="t-status open">Бүртгэл нээлттэй</span></div>
-        </div>
-        <div class="t-card east fade-up">
-          <div class="t-icon">🌆</div>
-          <div style="margin-bottom:.6rem"><span class="pill pill-east">Зүүн бүс</span></div>
-          <h3>Зүүн Бүсийн Аварга</h3>
-          <div class="t-meta">
-            <span>📅 2026 оны 6-р сарын 14–15</span>
-            <span>📍 New York, NY</span>
-            <span>👥 Зүүн бүсийн клубууд</span>
-          </div>
-          <div><span class="t-status open">Бүртгэл нээлттэй</span></div>
-        </div>
-        <div class="t-card round fade-up">
-          <div class="t-icon">🎯</div>
-          <div style="margin-bottom:.6rem"><span class="pill" style="background:rgba(142,68,173,.15);border:1px solid rgba(142,68,173,.4);color:#bb8fce">Тусгай</span></div>
-          <h3>Тойром Харваа</h3>
-          <div class="t-meta">
-            <span>📅 2026 оны 10-р сарын 4–5</span>
-            <span>📍 Chicago, Illinois</span>
-            <span>👥 Нээлттэй бүх Харваачид</span>
-          </div>
-          <div><span class="t-status closed">Бүртгэл удахгүй нээнэ</span></div>
-        </div>
-      </div>
+      <div class="tournament-grid" id="homeTournamentGrid"></div>
       <div style="text-align:center;margin-top:2.5rem">
         <a href="tournaments.html" class="btn btn-ghost">Бүх тэмцээний мэдээлэл →</a>
       </div>
@@ -231,35 +186,35 @@
               <td><div class="player-name-cell"><div class="player-avatar">БД</div><div><div class="player-full-name">Батдорж Дагва</div><div class="player-club">Denver Монголс</div></div></div></td>
               <td><span class="pill pill-west">Баруун</span></td>
               <td>Denver, CO</td>
-              <td><span class="score-val">2840</span></td>
+              <td><span class="score-val">3</span></td>
             </tr>
             <tr>
               <td><span class="rank-num top3">2</span></td>
               <td><div class="player-name-cell"><div class="player-avatar">ОБ</div><div><div class="player-full-name">Оюунбаатар Батжаргал</div><div class="player-club">New York Нутаг</div></div></div></td>
               <td><span class="pill pill-east">Зүүн</span></td>
               <td>New York, NY</td>
-              <td><span class="score-val">2790</span></td>
+              <td><span class="score-val">3</span></td>
             </tr>
             <tr>
               <td><span class="rank-num top3">3</span></td>
               <td><div class="player-name-cell"><div class="player-avatar">ГС</div><div><div class="player-full-name">Ганзориг Сүхбаатар</div><div class="player-club">Chicago Өргөө</div></div></div></td>
               <td><span class="pill pill-east">Зүүн</span></td>
               <td>Chicago, IL</td>
-              <td><span class="score-val">2750</span></td>
+              <td><span class="score-val">3</span></td>
             </tr>
             <tr>
               <td><span class="rank-num">4</span></td>
               <td><div class="player-name-cell"><div class="player-avatar">НА</div><div><div class="player-full-name">Нарантуяа Алтансүх</div><div class="player-club">LA Шагай</div></div></div></td>
               <td><span class="pill pill-west">Баруун</span></td>
               <td>Los Angeles, CA</td>
-              <td><span class="score-val">2710</span></td>
+              <td><span class="score-val">3</span></td>
             </tr>
             <tr>
               <td><span class="rank-num">5</span></td>
               <td><div class="player-name-cell"><div class="player-avatar">ЭМ</div><div><div class="player-full-name">Энхжаргал Мөнхбаяр</div><div class="player-club">Seattle Нуур</div></div></div></td>
               <td><span class="pill pill-west">Баруун</span></td>
               <td>Seattle, WA</td>
-              <td><span class="score-val">2680</span></td>
+              <td><span class="score-val">3</span></td>
             </tr>
           </tbody>
         </table>
@@ -320,10 +275,54 @@
   </div>
 </footer>
 
+<script src="assets/js/players-data.js"></script>
+<script src="assets/js/tournaments-data.js"></script>
 <script>
 function toggleNav() {
   document.getElementById('navLinks').classList.toggle('open');
 }
+function renderHomeTournaments() {
+  const grid = document.getElementById('homeTournamentGrid');
+  const upcoming = (window.tournamentsData && window.tournamentsData.upcoming) || [];
+  const iconByCategory = { national: '🏆', west: '🌄', east: '🌆', special: '🎯' };
+  const pillClassByCategory = { national: 'pill-gold', west: 'pill-west', east: 'pill-east', special: '' };
+  const cardClassByCategory = { national: 'national', west: 'west', east: 'east', special: 'round' };
+
+  if (!grid) return;
+  grid.innerHTML = upcoming.map(t => `
+    <div class="t-card ${cardClassByCategory[t.category] || 'round'} fade-up">
+      <div class="t-icon">${iconByCategory[t.category] || '🎯'}</div>
+      <div style="margin-bottom:.6rem">
+        ${
+          t.category === 'special'
+            ? `<span class="pill" style="background:rgba(142,68,173,.15);border:1px solid rgba(142,68,173,.4);color:#bb8fce">${t.pill.replace('🎯 ', '')}</span>`
+            : `<span class="pill ${pillClassByCategory[t.category] || ''}">${t.pill.replace(/^[^\s]+\s/, '')}</span>`
+        }
+      </div>
+      <h3>${t.title.replace(' 2026', '')}</h3>
+      <div class="t-meta">
+        <span>📅 ${t.date}</span>
+        <span>📍 ${t.venueSub}</span>
+        <span>👥 ${t.participantsSub || t.participants}</span>
+      </div>
+      <div><span class="t-status ${t.statusClass}">${t.statusText}</span></div>
+    </div>
+  `).join('');
+}
+const playersCountEl = document.getElementById('playersCount');
+const clubsCountEl = document.getElementById('clubsCount');
+const teamsCountEl = document.getElementById('teamsCount');
+if (playersCountEl && typeof window.getAllPlayers === 'function') {
+  const players = window.getAllPlayers();
+  playersCountEl.textContent = players.length;
+  if (clubsCountEl) {
+    clubsCountEl.textContent = new Set(players.map(p => p.club)).size;
+  }
+  if (teamsCountEl) {
+    teamsCountEl.textContent = new Set(players.map(p => `${p.club}::${p.team}`)).size;
+  }
+}
+renderHomeTournaments();
 document.querySelectorAll('.fade-up').forEach(el => {
   const obs = new IntersectionObserver(([e]) => { if (e.isIntersecting) { el.classList.add('visible'); obs.unobserve(el); } }, { threshold: .1 });
   obs.observe(el);
