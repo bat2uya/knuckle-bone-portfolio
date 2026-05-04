@@ -5,7 +5,7 @@ window.playersData = {
         name: 'Sacramento',
         clubs: [
           {
-            name: 'Golden Gate',
+            name: 'Golden Gate клуб',
             teams: [
               {
                 name: 'Тойром',
@@ -27,15 +27,31 @@ window.playersData = {
         ]
       },
       {
-        name: 'Florida',
+        name: 'Seattle',
         clubs: [
           {
-            name: 'Golden Gate',
+            name: 'Seattle Нүүдэлчин Клуб',
             teams: [
               {
-                name: 'Тойром',
+                name: 'Нүүдэлчин',
                 players: [
-                  { rank: 10, init: 'БУ', name: 'Бат-Уяа', events: 0, score: 4, title: 'Аймгийн дэд мэргэн', titleObtainedDate: '2024', wins: 0, pctWin: '0%', bio: '' }
+                  { rank: 10, init: '', name: 'Цэнджав', events: 0, score: 4, title: 'Аймгийн дэд мэргэн', titleObtainedDate: '2024', wins: 0, pctWin: '0%', bio: '' }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        name: 'Los Angeles',
+        clubs: [
+          {
+            name: 'Соёомбо Клуб',
+            teams: [
+              {
+                name: 'Соёомбо',
+                players: [
+                  { rank: 10, init: '', name: 'Аюурзана', events: 0, score: 4, title: 'Аймгийн мэргэн', titleObtainedDate: '2024', wins: 0, pctWin: '0%', bio: '' }
                 ]
               }
             ]
@@ -120,7 +136,103 @@ window.playersData = {
             ]
           }
         ]
-      }
+      },
+      {
+        name: 'Washington D.C.',
+        clubs: [
+          {
+            name: 'Washington DC Клуб',
+            teams: [
+              {
+                name: 'Бүрэн',
+                players: [
+                  { rank: 10, init: 'БУ', name: 'Болдбаатар', events: 0, score: 4, title: 'Мэргэн', titleObtainedDate: '2024', wins: 0, pctWin: '0%', bio: '' }
+                ]
+              },
+              {
+                name: 'Дүүрэн',
+                players: [
+                  { rank: 10, init: 'БУ', name: 'Баярцэнгэл', events: 0, score: 4, title: 'Мэргэн', titleObtainedDate: '2024', wins: 0, pctWin: '0%', bio: '' }
+                ]
+              },
+              {
+                name: 'Шонхор',
+                players: [
+                  { rank: 10, init: 'БУ', name: 'Ууганжаргал', events: 0, score: 4, title: 'Мэргэн', titleObtainedDate: '2024', wins: 0, pctWin: '0%', bio: '' }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        name: 'Indiana',
+        clubs: [
+          {
+            name: 'Indiana Дэрэн Клуб',
+            teams: [
+              {
+                name: 'Дэрэн',
+                players: [
+                  { rank: 10, init: 'БУ', name: 'Тэрбиш', events: 0, score: 4, title: 'Мэргэн', titleObtainedDate: '2024', wins: 0, pctWin: '0%', bio: '' }
+                ]
+              } 
+            ]
+          }
+        ]
+      },
+      {
+        name: 'Chicago',
+        clubs: [
+          {
+            name: 'Chicago Аргай Клуб',
+            teams: [
+              {
+                name: 'Арга билэг',
+                players: [
+                  { rank: 10, init: 'БУ', name: 'Чинзориг', events: 0, score: 4, title: 'Мэргэн', titleObtainedDate: '2024', wins: 0, pctWin: '0%', bio: '' }
+                ]
+              },
+              {
+                name: 'Их аян',
+                players: [
+                  { rank: 10, init: 'БУ', name: 'Уламбаяр', events: 0, score: 4, title: 'Мэргэн', titleObtainedDate: '2024', wins: 0, pctWin: '0%', bio: '' }
+                ]
+              },
+              {
+                name: 'Эрдэнэбулган',
+                players: [
+                  { rank: 10, init: 'БУ', name: 'Жамьянсүрэн', events: 0, score: 4, title: 'Мэргэн', titleObtainedDate: '2024', wins: 0, pctWin: '0%', bio: '' }
+                ]
+              },
+              {
+                name: 'Цэц',
+                players: [
+                  { rank: 10, init: 'БУ', name: 'Нямбаяр', events: 0, score: 4, title: 'Мэргэн', titleObtainedDate: '2024', wins: 0, pctWin: '0%', bio: '' }
+                ]
+              },
+              {
+                name: 'Сүлд',
+                players: [
+                  { rank: 10, init: 'БУ', name: 'Тогтуун', events: 0, score: 4, title: 'Мэргэн', titleObtainedDate: '2024', wins: 0, pctWin: '0%', bio: '' }
+                ]
+              },
+              {
+                name: 'Эрдэнэзуу',
+                players: [
+                  { rank: 10, init: 'БУ', name: 'Пүрэвсүрэн', events: 0, score: 4, title: 'Мэргэн', titleObtainedDate: '2024', wins: 0, pctWin: '0%', bio: '' }
+                ]
+              },
+              {
+                name: 'Тэнгэр',
+                players: [
+                  { rank: 10, init: 'БУ', name: 'Жаргалсайхан', events: 0, score: 4, title: 'Мэргэн', titleObtainedDate: '2024', wins: 0, pctWin: '0%', bio: '' }
+                ]
+              }
+            ]
+          }
+        ]
+      },
     ]
   }
 };
